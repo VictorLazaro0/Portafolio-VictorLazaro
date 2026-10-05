@@ -1,0 +1,133 @@
+/* SECCIÓN PROYECTOS */
+#proyectos {
+    padding: 80px 0;
+}
+
+.proyectos-intro {
+    color: var(--secondary-color);
+    margin-bottom: 40px;
+    font-size: 1.05rem;
+}
+
+/* Grid: 3 columnas en Desktop por defecto */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* Card Estilos */
+.project-card {
+    background-color: var(--card-color);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 25px rgba(56, 189, 248, 0.1);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.card-header h3 {
+    color: var(--text-color);
+    font-size: 1.3rem;
+}
+
+.project-type {
+    font-size: 0.75rem;
+    color: var(--primary-color);
+    background-color: rgba(56, 189, 248, 0.1);
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.project-description {
+    color: var(--secondary-color);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Badges de Tecnologías */
+.tec {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.tec span {
+    background-color: var(--bg-color);
+    color: var(--secondary-color);
+    border: 1px solid var(--border-color);
+    font-size: 0.8rem;
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+
+/* Botones de Acción */
+.card-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.card-btn {
+    flex: 1;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.card-btn.primary {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+}
+
+.card-btn.primary:hover {
+    background-color: var(--hover-color);
+}
+
+.card-btn.secondary {
+    background-color: transparent;
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+}
+
+.card-btn.secondary:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+/* RESPONSIVE */
+
+/* Tablet (2 columnas) */
+@media (max-width: 900px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Móvil / Celular (1 por fila) */
+@media (max-width: 600px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,49 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio </title>
+    <title>Portafolio | Víctor Manuel Lázaro Bravo</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/formulario.css">
 </head>
 <body>
     
-    <header>
-        <h1>Víctor Manuel Lázaro Bravo</h1>
-
-        <nav>
-            <a href="#sobre-mi">Home</a>
-            <a href="#sobre-mi">Sobre mí</a>
-            <a href="#proyectos">Proyectos</a>
-            <a href="#contacto">Contacto</a>
+    <!-- Header / Hero + Navbar -->
+    <header id="inicio">
+        <nav class="navbar">
+            <a href="#inicio" class="logo">VL</a>
+            <div class="nav-links">
+                <a href="#inicio">Home</a>
+                <a href="#sobre-mi">Sobre mí</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#contacto">Contacto</a>
+            </div>
         </nav>
+
+        <div class="hero-content">
+            <h1>Víctor Manuel Lázaro Bravo</h1>
+            <h2 class="role">Desarrollador Java Fullstack</h2>
+            <p class="description">
+                Especializado en construir aplicaciones web escalables y robustas. Combino la potencia y arquitectura del backend en Java con experiencias de usuario dinámicas, limpias e intuitivas en el frontend.
+            </p>
+        </div>
     </header>
 
     <main>
 
         <!-- Sobre mí -->
-        <section id="sobre-mi">
-            <h2>Sobre mí</h2>
 
+    <section id="sobre-mi">
+    <h2>Sobre mí</h2>
+
+    <div class="sobre-mi-container">
+        <!-- Columna 1: Imagen / Ilustración -->
+        <div class="sobre-mi-img">
+            <img src="" alt="Víctor Manuel Lázaro Bravo - Desarrollador Java Fullstack" />
+        </div>
+
+        <!-- Columna 2: Texto + Estudios y Certificaciones -->
+        <div class="sobre-mi-texto">
             <p>
-                
-Soy Ingeniero de Software enfocado en el desarrollo Full Stack, apasionado por la tecnología y por la creación de soluciones de software que aporten valor. Me interesa transformar ideas y necesidades en soluciones funcionales, combinando mis habilidades en programación, análisis, creatividad y resolución de problemas.
-Me motiva aprender constantemente nuevas herramientas y tecnologías, así como trabajar en equipo y participar en proyectos que representen nuevos retos. Disfruto aplicar mis conocimientos, fortalecer mis habilidades y seguir creciendo profesionalmente en el desarrollo de software.
+                Soy Ingeniero de Software enfocado en el desarrollo Full Stack, apasionado por la tecnología y por la creación de soluciones de software que aporten valor. Me interesa transformar ideas y necesidades en soluciones funcionales, combinando mis habilidades en programación, análisis y resolución de problemas.
+            </p>
+            <p>
+                Me motiva aprender constantemente nuevas herramientas y trabajar en proyectos que representen retos continuos en el ecosistema Java y desarrollo web.
             </p>
 
-        </section>
+            <div class="credenciales">
+                <div class="credencial-box">
+                    <h3>🎓 Estudios</h3>
+                    <ul>
+                        <li>
+                            <strong>Ingeniería en Tecnologias de la Informacion  </strong>
+                            <span>Universidad Tecnologica de Izucar de Matamoros </span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="credencial-box">
+                    <h3>🏆 Certificaciones</h3>
+                    <ul>
+                        <li>
+                            <strong>Introducción a Java </strong>
+                            <span> Accenture Agosto - 2026</span>
+                        </li>
+                        <li>
+                            <strong>Curso Profesional de Docker </strong>
+                            <span>Codigo Facilito - Noviembre - 2025</span>
+                                  </li>
+                                      </ul>
+                                     </div>
+                                      </div>
+                                 </div>
+                            </div>
+                </section>
 
         <!-- Habilidades -->
         <section id="habilidades">
             <h2>Habilidades</h2>
-
             <ul>
                 <li>Desarrollo de aplicaciones web</li>
                 <li>Desarrollo de APIs REST</li>
                 <li>HTML, CSS y JavaScript</li>
                 <li>Backend y bases de datos</li>
                 <li>Git y GitHub</li>
-                <li>Java </li>
+                <li>Java</li>
                 <li>Spring Boot</li>
                 <li>Spring Framework</li>
                 <li>PostgreSQL</li> 
@@ -51,11 +98,121 @@ Me motiva aprender constantemente nuevas herramientas y tecnologías, así como 
             </ul>
         </section>
 
+        <!-- Proyectos -->
+      <!-- Proyectos -->
+<section id="proyectos">
+    <h2>Proyectos Destacados</h2>
+    <p class="proyectos-intro">
+      Una selección de aplicaciones web desarrolladas con JavaScript, HTML, CSS, Bootstrap, Java y Spring Boot.
+    </p>
+
+    <div class="projects-grid">
+        <!-- Proyecto 1 -->
+        <article class="project-card">
+            <div class="card-header">
+                <h3>AVAA Athletics</h3>
+                <span class="project-type">Fullstack App</span>
+            </div>
+            <p class="project-description">
+               Plataforma online diseñada para mostrar los principales productos y servicios de una tienda deportiva. El sitio web está enfocado en ofrecer una experiencia de usuario dinámica y fluida, convirtiendo a los visitantes en clientes potenciales a través de un catálogo digital interactivo.
+            </p>
+            <div class="tec">
+               <ul> <ol><span>HTML</span></ol>
+               <ol><span>CSS</span></ol> 
+                <ol><span>JavaScript</span></ol></ul>
+            </div>
+           
+        </article>
+
+        <!-- Proyecto 2 -->
+        <article class="project-card">
+            <div class="card-header">
+                <h3>DeveLoopers</h3>
+                <span class="project-type">Web Application</span>
+            </div>
+            <p class="project-description">
+               LOOP es una aplicación web que combina una red social y una plataforma de colaboración enfocada en programadores, estudiantes y profesionales del sector tecnológico. Permite a los usuarios conectar con otros profesionales, compartir conocimientos, participar en proyectos y colaborar en comunidad, creando un espacio orientado al aprendizaje continuo, el intercambio de ideas y el crecimiento profesional dentro del ecosistema tecnológico.
+            </p>
+            <div class="tech-tags">
+                <span>Spring Boot</span>
+                <span>Bootstrap</span>
+               
+            </div>
+           
+        </article>
+
+        <!-- Proyecto 3 -->
+        <article class="project-card">
+            <div class="card-header">
+                <h3>TuristAT</h3>
+                <span class="project-type"> Aplicación móvil</span>
+            </div>
+            <p class="project-description">
+                Aplicación móvil interactiva enfocada en descubrir los Pueblos Mágicos del estado de Puebla, ofreciendo a los usuarios una experiencia cultural y turística mediante contenido sobre los mitos, leyendas, tradiciones e historias representativas de cada destino.
+            </p>
+            <div class="tech-tags">
+                <span>HTML5 / CSS3</span>
+                <span>JavaScript</span>
+                
+            </div>
+            
+        </article>
+    </div>
+</section>
+
+        <!-- Contacto -->
+        
+            <!-- Contacto -->
+     <section id="contacto">
+     <h2>Contacto</h2>
+        <p class="contacto-intro">
+        ¿Tienes un proyecto en mente, una vacante o alguna pregunta? ¡Envíame un mensaje y te responderé a la brevedad!
+        </p>
+
+        <form class="contacto-form" action="https://formspree.io/f/tu-id-de-formspree" method="POST">
+        <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input 
+                type="text" 
+                id="nombre" 
+                name="nombre" 
+                placeholder="Tu nombre completo" 
+                required 
+            />
+        </div>
+
+        <div class="form-group">
+            <label for="correo">Correo Electrónico</label>
+            <input 
+                type="email" 
+                id="correo" 
+                name="correo" 
+                placeholder="tu.correo@ejemplo.com" 
+                required 
+            />
+        </div>
+
+        <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea 
+                id="mensaje" 
+                name="mensaje" 
+                rows="5" 
+                placeholder="Escribe tu mensaje aquí..." 
+                required
+            ></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">Enviar Mensaje</button>
+         </form>
+         </section>
+        </section>
 
     </main>
 
+    <!-- Footer -->
     <footer>
-            <div class="footer-content">
+        <div class="footer-content">
             <p class="copyright">&copy; 2026 VictorLazaro. Todos los derechos reservados.</p>
             <nav class="footer-links">
                 <a href="https://github.com" target="_blank" aria-label="GitHub" class="social-icon">
@@ -64,10 +221,9 @@ Me motiva aprender constantemente nuevas herramientas y tecnologías, así como 
                 <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn" class="social-icon">
                     <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
                 </a>
+            </nav>
         </div>
-
     </footer>
-    
-    
+
 </body>
 </html>
